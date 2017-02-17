@@ -1,6 +1,6 @@
 ---
 title: "Evaluating Candidate Models"
-author: "Steph Locke"
+author: "Shaye Pearson"
 date: "17 February 2017"
 output: html_document
 ---
@@ -35,7 +35,7 @@ testres<-data.frame(
 
 ## Confusion Matrices
 
-### allin
+### allin - confision data would be good for sentiment model, did we class correctly
 ```{r cmallin}
 confusionMatrix(trainres$actual, trainres$allin)
 confusionMatrix(testres$actual, testres$allin)
