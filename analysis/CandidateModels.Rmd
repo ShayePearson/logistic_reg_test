@@ -1,7 +1,7 @@
 ---
 title: "Candidate Models"
-author: "Steph Locke"
-date: "16 February 2017"
+author: "Shaye Pearson"
+date: "17 February 2017"
 output: html_document
 ---
 Our fully prepared data can now be used to generate models.
@@ -26,7 +26,7 @@ summary(simple)
 caret::varImp(simple)
 ```
 
-## GLMNET
+## GLMNET - this will penalise the low information variables
 ```{r glmnet}
 net<-caret::train(survived~.,                                       data=titanic_train_c,
                     method="glmnet")
